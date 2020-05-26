@@ -1,0 +1,94 @@
+@import 'oldStyles';
+$specBlack: rgb(26, 51, 0);
+$greenlight: rgb(140, 217, 140);
+$greenblack: rgb(140, 190, 140);
+$grey-black: rgb(77, 77, 77);
+$bord: 2px solid $grey-black;
+
+@mixin nav(){
+	padding: 0 6px;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+@mixin footer_color($color){
+	background-color: $color;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+}
+
+.nav {
+	padding: 2px 0;
+	margin: 0px;
+	background-color: $greenlight;
+	border-bottom: $bord;
+	a{
+		:hover{
+			background-color:$specBlack;
+		}
+
+	   @include nav();
+	}
+
+}
+
+.nav_drop{
+	flex-direction: column;
+	padding: 0 15px;
+	align-items: flex-start;
+	background: $greenblack;
+	a{
+		@include nav();
+	}
+}
+
+footer {
+	@include footer_color($grey-black);
+}
+hr{
+	color: $greenlight;
+}
+
+img{
+	border: 2px solid $grey-black;
+	border-radius: 8px;
+}
+@media(max-width: 500px){
+	.nav{ 
+
+		a:first-child{
+			display: inline;
+		}
+		a{
+			display: none;
+		}
+	}
+
+	#icon{
+		display: inline;
+	}
+}
+
+@media(min-width: 950px){
+	.footer_text p{
+		padding: 2px 2px;
+		width: 55%;
+	}
+
+	#main{
+		display: flex;
+	}
+
+	.split_main{
+		width: 80%;
+	}
+
+	.split{
+		width: 19%;
+	}
+}
+
+	

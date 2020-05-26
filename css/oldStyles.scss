@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+body main {
+  text-align: center;
+  margin-left: 2px;
+  padding: 10px 2px 90px 2px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.main_wrap {
+  padding-bottom: 90px;
+}
+
+.spec_main {
+  border: 1px 10;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+/*add special hiden icon and droplist for small devices */
+#icon {
+  overflow: hidden;
+  display: none;
+}
+
+#main h2, h4 {
+  font-family: sans-serif;
+}
+
+#main .spec {
+  font-family: fantasy;
+}
+
+[type=button] {
+  padding: 5px 5px 2px 2px;
+  border: 2px solid #1e7b1e;
+  background-color: #3385ff;
+}
+
+[name=quest] {
+  border-bottom: 1px;
+}
+
+[name=noAnswer] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+ol > li {
+  text-transform: uppercase;
+}
+
+.nameInp * {
+  border: 3px solid #005ce6;
+}
+
+h6 + p {
+  font-family: sans-serif;
+  color: #141e46;
+}
+
+div > ol {
+  border-top: 2px solid black;
+}
+
+article:first child {
+  text-align: center;
+}
+
+article h2 + p {
+  align-self: flex-start;
+  color: #cc6600;
+}
+
+label {
+  font-style: italic;
+}
+
+p {
+  font-family: serif !important;
+}
